@@ -8,7 +8,7 @@ import {
 import { BiMicrophone, BiMicrophoneOff } from "react-icons/bi";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
 // eslint-disable-next-line react/prop-types
-const Card = ({ image, age, name, location }) => {
+const Card = ({ id, age, name, location }) => {
   const [options, setOptions] = useState({
     video: true,
     sound: true,
@@ -17,7 +17,7 @@ const Card = ({ image, age, name, location }) => {
   const [play, setPlay] = useState(false);
   return (
     <div
-      className={`rounded-3xl bg-[url("${image}")] bg-cover   h-80 w-64 shadow-md p-4`}
+      className={`rounded-3xl bg-[url("src/assets/1.jpg")] bg-cover   h-80 w-64 shadow-md p-4`}
     >
       <div className="flex flex-col gap-2">
         <button
@@ -63,7 +63,10 @@ const Card = ({ image, age, name, location }) => {
         </p>
         <p className="text-sm text-start">{location}</p>
       </div>
-      <div className="flex justify-center items-center bg-white h-16 w-16 rounded-full absolute -bottom-5 left-[40%]" onClick={()=>setPlay(!play)} >
+      <div
+        className="flex justify-center items-center bg-white h-16 w-16 rounded-full absolute -bottom-5 left-[40%]"
+        onClick={() => setPlay(!play)}
+      >
         {play ? (
           <div>
             <FaPauseCircle size={50} />
