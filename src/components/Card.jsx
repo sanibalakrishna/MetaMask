@@ -8,7 +8,7 @@ import {
 import { BiMicrophone, BiMicrophoneOff } from "react-icons/bi";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
 // eslint-disable-next-line react/prop-types
-const Card = ({ id, age, name, location }) => {
+const Card = ({ image, age, name, location }) => {
   const [options, setOptions] = useState({
     video: true,
     sound: true,
@@ -17,9 +17,14 @@ const Card = ({ id, age, name, location }) => {
   const [play, setPlay] = useState(false);
   return (
     <div
-      className={`rounded-3xl bg-[url("src/assets/1.jpg")] bg-cover   h-80 w-64 shadow-md p-4`}
+      // eslint-disable-next-line react/prop-types
+      className={`realtive rounded-3xl h-80 w-64 shadow-md p-4`}
     >
-      <div className="flex flex-col gap-2">
+      <img
+        src={image}
+        className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+      />
+      <div className="flex flex-col gap-2 absolute top-5 left-3">
         <button
           className={`flex justify-center items-center h-10 w-10 rounded-full ${
             options.video ? "bg-[#ffffff] " : "bg-[#ffffff60]"

@@ -12,12 +12,12 @@ import ProfileCard from "../components/ProfileCard";
 import { RiBoxingFill } from "react-icons/ri";
 import { GiCoffeeCup, GiPaintBrush } from "react-icons/gi";
 import { IoMusicalNotesSharp, IoBicycleSharp } from "react-icons/io5";
-import second from "../assets/2.jpg";
+import first from "../assets/1.jpg";
 function Profile() {
   const details = {
-    image: second,
+    image: first,
     age: 28,
-    name: "Jane Smith",
+    name: "Lay",
     location: "Praue,Czech Republic",
   };
   return (
