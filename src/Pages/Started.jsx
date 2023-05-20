@@ -16,7 +16,7 @@ function Started() {
           <span className="font-bold">META</span>MATCH
         </p>
       </div>
-      <div className="w-full">
+      <div className="w-full md:flex md:flex-col md:justify-center md:items-center">
         {/* <img src={first} className="h-28 rounded-full absolute top-3 right-2" />
         <img src={fourth} className="h-28 rounded-full absolute top-20 " />
         <img
@@ -28,15 +28,15 @@ function Started() {
           className="h-28 rounded-full  absolute top-32 -right-10"
         />
   */}{" "}
-        <div className="flex justify-end w-full -mt-10">
+        <div className="flex justify-end md:justify-center  w-full -mt-10">
           <img src={fifth} className="h-24 rounded-full " />
         </div>
-        <div className="flex items-center gap-3 rotate-12 w-full">
+        <div className="flex md:justify-center items-center gap-3 rotate-12 w-full">
           <img src={first} className="h-24 rounded-full -rotate-12" />
           <img src={third} className="h-16 rounded-full -rotate-12" />
           <img src={fourth} className="h-24 rounded-full -rotate-12" />
         </div>
-        <div className="flex items-center  gap-4 z-10 rotate-12 w-full -ml-10 ">
+        <div className="flex md:justify-center items-center  gap-4 z-10 rotate-12 w-full -ml-10 ">
           <img src={fifth} className="h-24 rounded-full -rotate-12" />
           <img src={second} className="h-28 rounded-full -rotate-12" />
           <img src={fourth} className="h-24 rounded-full -rotate-12" />
@@ -48,7 +48,7 @@ function Started() {
         </p>
         <p>Join us and socialize with millions of meta humans</p>
       </div>
-      <div className="flex justify-between w-full mt-5">
+      <div className="flex justify-between md:justify-around w-full mt-5">
         <Link to={"/home"}>
           <button className="flex items-center bg-[#232323] text-white text-sm rounded-2xl px-6 py-4 active:scale-95">
             Get Started <BsArrowUpRight />
